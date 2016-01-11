@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta charset="utf-8"/>
+<script type="text/javascript" src="processing.js"></script>
+<style>
+<!header {
+    background-color:black;
+    color:white;
+    text-align:center;
+    padding:5px;	 
+}>
+canvas {
+    <!line-height:30px;>
+    <!background-color:#eeeeee;>
+    height:600px;
+    width:1024pxpx;
+    
+    padding:5px;
+}
+section {
+    width:400px;
+    float:left;
+    padding:10px;	 	 
+}
+<!footer {
+    background-color:black;
+    color:white;
+    clear:both;
+    text-align:center;
+    padding:5px;	 	 
+}>
+</style>
+</head>
+
+<body>
+
+<script>
+if (typeof console == "undefined") {
+    window.console = {
+        log: function () {}
+    };
+}
+</script>
+<canvas id="narrative" data-processing-sources="Narrative_infographic_web_summary.pde"> </canvas>
+
+<section>
+This infographic aims to illustrate how a range of biodiversity indicators 
+(sometimes apparently inconsistent) arise from changes to species in a landscape
+being perturbed by land cover change and warming climate.
+<p>
+The infographic is comprised of two sections, (i) a hypothetical landscape, composed of three 
+ecosystems initially, and (ii) a set of indicators of the biodiversity state of the landscape.
+A set of species exist in this landscape and have an affinity for a particular ecosystem type 
+(indicated by the colour of the symbol) and a set of traits indicated by the symbol shape.
+<ul>
+ <li>&#9733 Specialist to that ecosystem</li>
+ <li>&#9650 Climate sensitive species</li>
+ <li>&#9679 Generalist species</li>
+ <li>&#9632 Disturbance tolerant species</li>
+</ul>
+Different symbol colour and shape combinations represent different species, while the number of symbols 
+represents the abundance of each species.
+<p>
+Press <b>return</b> to step forward in time. Press <b>backspace</b> or <b>delete</b> followed by <b>return</b> to reset the animation
+
+</section>
+
+
+</body>
+</html>
